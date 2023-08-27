@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgb(11, 133, 203);
+
+}
+.nav_list li a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+.navbar li{
+    margin:  20px;
+padding: 10px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+
+}
+.navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+}
