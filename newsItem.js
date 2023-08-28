@@ -9,11 +9,11 @@ export class newsItem extends Component {
       <div className='card-container'>
         
         <div className='card' >
-  <img src="..." alt="..."/>
+  <img src="https://images.wsj.net/im-842273/social" alt="..." height= '100px'/>
   <div >
     <h5 className="card-title">{title}</h5>
     <p className="card-text">{description}</p>
-    <button> Go somewhere </button>
+    <button> Read more </button>
   </div>
 </div>
 
