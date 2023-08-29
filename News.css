@@ -3,4 +3,9 @@
    flex-direction: row;
    justify-content:space-evenly;
    flex-wrap: wrap;
+   margin: 20px;
+} 
+.top-heading{
+    text-align: center;
+    margin: 35px;
 }
