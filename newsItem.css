@@ -1,8 +1,9 @@
 .card-container{
-    background-color: #e8e5e5;
+    background-color: #f6f5f5;
     padding: 20px;
     margin:10px;
     width:18vw;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -10,3 +11,15 @@
     font-size: 16px;
     font-family:'Courier New', Courier, monospace;
 }
+.button{
+    color:white;
+    background-color: rgb(12, 113, 196);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 7px;
+    font-size: 15px;
+
+    
+}
+
