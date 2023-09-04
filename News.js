@@ -2,30 +2,58 @@ import React, { Component } from 'react'
 import NewsItem from './newsItem'
 import './News.css'
 export class News extends Component {
-  
+
   constructor() {
     super();
     // console.log('I am a constructor from new component');
     this.state = {
       articles: [],
-      loading :true,
+      loading: true,
+      page: 1,
     }
   }
+
   async componentDidMount() {
     // console.log("componentDidMount");
-    let url = "https://newsapi.org/v2/everything?q=apple&from=2023-08-31&to=2023-08-31&sortBy=popularity&apiKey=2c649df290b3441db496a9e27cc18e34";
+    let url = "https://newsapi.org/v2/everything?q=apple&from=2023-08-31&to=2023-08-31&sortBy=popularity&apiKey=2c649df290b3441db496a9e27cc18e34&page=1";
     let data = await fetch(url);
     let parsedData = await data.json();
-    console.log(parsedData);
+    // console.log(parsedData);
     this.setState({ articles: parsedData.articles })
-
-
   }
+
+
+
   render() {
+    const handlePrevClick = async () => {
+      console.log('prev clicked');
+      let url = `https://newsapi.org/v2/everything?q=apple&from=2023-08-31&to=2023-08-31&sortBy=popularity&apiKey=2c649df290b3441db496a9e27cc18e34&page=${this.state.page - 1}`;
+      let data = await fetch(url);
+      let parsedData = await data.json();
+      this.setState({
+        page: this.state.page - 1,
+        articles: parsedData.articles
+      })
+    }
+    const handleNextClick = async () => {
+      console.log('next clicked');
+      let url = `https://newsapi.org/v2/everything?q=apple&from=2023-08-31&to=2023-08-31&sortBy=popularity&apiKey=2c649df290b3441db496a9e27cc18e34&page=${this.state.page + 1}`;
+      let data = await fetch(url);
+      let parsedData = await data.json();
+      this.setState({
+        page: this.state.page + 1,
+        articles: parsedData.articles
+      })
+    }
     // console.log('render');
     return (
       <div>
+<div className='container'>
+          <button disabled={this.state.page <= 1} className='prevbtn' onClick={handlePrevClick} > &larr; Previous </button>
+          <button className='nextbtn' onClick={handleNextClick} > Next &rarr;</button>
 
+
+        </div>
         <h1 className='top-heading'>28-News   Top Headlines</h1>
 
         <div className='cards-container'>
@@ -40,6 +68,7 @@ export class News extends Component {
 
 
         </div>
+        
       </div>
 
     )
