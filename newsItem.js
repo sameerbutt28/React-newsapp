@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+
 import './newsItem.css'
 
 export class newsItem extends Component {
@@ -17,7 +19,7 @@ export class newsItem extends Component {
     <h3 className="card-title">{title}</h3>
     <p className="card-text">{description}</p>
     <br></br>
-    <a className='button' href={url? url: 'https://www.macrumors.com/2023/08/31/apple-discontinues-itunes-movie-trailers-app/'} target='_blank'> Read more</a>
+    <Link className='button' to={url? url: 'https://www.macrumors.com/2023/08/31/apple-discontinues-itunes-movie-trailers-app/'} target='_blank'> Read more</Link>
 
   </div>
 </div>
