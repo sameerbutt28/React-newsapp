@@ -48,13 +48,13 @@ export class News extends Component {
     // console.log('render');
     return (
       <div>
-<div className='container'>
+<div className='btn-container'>
           <button disabled={this.state.page <= 1} className='prevbtn' onClick={handlePrevClick} > &larr; Previous </button>
           <button className='nextbtn' onClick={handleNextClick} > Next &rarr;</button>
 
 
         </div>
-        <h1 className='top-heading'>28-News   Top Headlines</h1>
+        <h1 className='top-heading'>28-News   Top Headlines </h1>
 
         <div className='cards-container'>
           {this.state.articles.map((element) => {

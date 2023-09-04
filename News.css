@@ -14,7 +14,7 @@
     background-color: rgb(106, 188, 236);
     text-decoration: none;
     font-weight: bold;
-    padding: 5px;
+    padding: 12px;
     border-radius: 5px;
     font-size: 16px;
 border: none;
@@ -27,7 +27,7 @@ border: none;
     padding: 12px;
     border-radius: 5px;
     font-size: 16px;
-border: none;
+ border: none;
 }
 .btn-container{
     display:flex ;
