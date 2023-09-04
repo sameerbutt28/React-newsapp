@@ -27,3 +27,6 @@ padding: 10px;
 .navbar ul li a:hover{
     color: rgb(255, 255, 255);
 }
+.navbar ul li a:active{ 
+    color: rgb(255, 255, 255);
+}
