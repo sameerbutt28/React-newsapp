@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Loading from './loading.gif'
 import './Spinner.css'
 export default function Spinner() {
