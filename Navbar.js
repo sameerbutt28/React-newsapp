@@ -16,15 +16,15 @@ export class Navbar extends Component {
                 <nav className='navbar'>
                     <ul className='nav_list'>
                         <li > <Link to="/news"> 28-News </Link>  </li>
-                        <li > <Link to="/news"> Top-Headlines </Link> </li>
-                        <li > <Link to="/about"> About </Link> </li>
-                        <li > <Link to="/about"> Business </Link> </li>
-                        <li > <Link to="/about"> Entertainment</Link> </li>
-                        <li > <Link to="/about"> General</Link> </li>
-                        <li > <Link to="/about"> Health</Link> </li>
-                        <li > <Link to="/about"> Science</Link> </li>
-                        <li > <Link to="/about"> Sports</Link> </li>
-                        <li > <Link to="/about"> Technology</Link> </li>
+                        <li > <Link to="/news"> top-headlines </Link> </li>
+                        <li > <Link to="/about"> about </Link> </li>
+                        {/* <li > <Link to="/business"> business </Link> </li>
+                        <li > <Link to="/entertainment"> entertainment</Link> </li>
+                        <li > <Link to="/general"> general</Link> </li>
+                        <li > <Link to="/health"> health</Link> </li>
+                        <li > <Link to="/science"> science</Link> </li>
+                        <li > <Link to="/sports"> sports</Link> </li>
+                        <li > <Link to="/technology"> technology</Link> </li> */}
 
                     </ul>
                 </nav>
